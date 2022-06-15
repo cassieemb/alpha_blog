@@ -68,9 +68,14 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     capybara (3.37.1)
       addressable
@@ -89,6 +94,8 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    execjs (2.8.1)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -111,7 +118,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.15.0)
+    minitest (5.16.0)
     msgpack (1.5.2)
     net-imap (0.2.3)
       digest
@@ -171,6 +178,8 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.2.1)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -183,15 +192,14 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.3)
+    sqlite3 (1.4.4)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     strscan (3.0.3)
     thor (1.2.1)
     timeout (0.3.0)
-    turbo-rails (1.1.1)
+    turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
       railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -217,6 +225,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap-sass
   capybara
   debug
   importmap-rails
@@ -229,7 +238,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  turbo-rails
+  turbo-rails (~> 1.0.0)
   tzinfo-data
   web-console
   webdrivers
