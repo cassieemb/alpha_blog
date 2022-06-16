@@ -36,3 +36,6 @@
 
 # ignore idea file
 .idea/
+
+# ignore node modules
+node_modules/
