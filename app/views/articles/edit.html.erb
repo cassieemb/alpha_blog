@@ -1,28 +1,4 @@
 <h1>Edit Article</h1>
 
-<% if @article.errors.any? %>
-  <h2>There were some errors preventing your article from saving. Try again!</h2>
-  <ul>
-    <% @article.errors.full_messages.each do |err| %>
-      <li><%=err %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= form_with(model: @article, local: true)  do |f|%>
-  <p>
-    <%= f.label :title %>:
-    <br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :description %>:
-    <br>
-    <%= f.text_area :description %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<%= render 'form' %>
+<%= link_to 'Return to Articles Page', articles_path %>
